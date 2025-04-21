@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>login</title>
+<style>
+body{text-align:center;
+     align-items:center;
+     display:flex;
+     justify-content:center}
+.boundary{background-color:hsla(250,50%,70%,0.4);
+          width:500px;
+          height:250px;
+          text-align:center;
+          align-items;
+          justify-content:center;
+          border-radius:30%;
+          display:flex;
+          border:5px solid black;
+          font-family:sans-serif;
+          flex-direction: column;
+          }
+          input{color: blueviolet;
+                font-weight: bold;
+                font-size:25px;
+                 padding-left: 10px;
+                padding-right: 15px;
+                }
+                button{background-color: hotpink;
+                       }
+                       button:hover{background-color: rgb(120, 120, 156);
+                                    transform: translateY(20px);}
+
+</style>
+</head>
+<body>
+<h2>Registration Form</h2>
+<div class="boundary">
+<input type="text" value="enter your name" id="name">
+<br><input type="text" value="enter your reg number" id="reg">
+<br><button type="button" id="btn" onclick="clickbutton()">LOG IN</button>
+</div>
+<script>
+    function clickbutton(){
+let name=document.getElementById("name").value.trim();
+let reg=document.getElementById("reg").value.trim();
+if(name==="" || reg=== "" || name=== "enter your name" || reg=== "enter your rg number")
+{
+    alert("please complete form before procced");
+}
+else{
+        window.location.href="newpage.html";}
+    }
+
+</script>
+</body>
+</html>
